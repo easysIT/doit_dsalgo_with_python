@@ -40,6 +40,7 @@ def shaker_sort_verbose(a: MutableSequence) -> None:
                                     ' +' if a[j] > a[j + 1] else ' -'),
                      end='')
             print(f'{a[n - 1]:2}')
+            ccnt += 1
             if a[j] > a[j + 1]:
                 scnt += 1
                 a[j], a[j + 1] = a[j + 1], a[j]
